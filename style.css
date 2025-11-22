@@ -339,7 +339,7 @@ header#hero {
     
 }
 
-#ypewriter::after {
+#typewriter::after {
     content: '';
     position: absolute;
     right: 0;
