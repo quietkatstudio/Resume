@@ -89,7 +89,7 @@ themeToggle.addEventListener("click", () => {
 
 //back to top button
 const backToTopBtn = document.getElementById('backToTop');
-window.addEventLister('scroll', () => {
+window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
         backToTopBtn.style.display = 'block';
     } else {
