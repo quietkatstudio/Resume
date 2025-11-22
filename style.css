@@ -14,7 +14,7 @@
     margin: 0;
 
     
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: flex-end;
     gap: 1rem;
 }
