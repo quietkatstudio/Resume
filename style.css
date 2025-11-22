@@ -285,7 +285,11 @@ body.dark-mode .logo {
         transform: translateY(0);
         opacity: 1;
     }
+    body.dark-mode .nav-list {
+        background: linear-gradient(to bottom, #121212, #2b1a33);
+    }
 
+    
     .hamburger {
         display: flex;
         z-index: 1100;
