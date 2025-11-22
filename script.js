@@ -129,7 +129,12 @@ function createSparkle() {
 setInterval(createSparkle, 200);
 
 //a collapsible mobile menu
+const hamburger = document.getElementById('hamburger');
+const navList = document.getElementById('nav-list');
 
+hamburger.addEventListener('click',() => {
+    navList.classList.toggle('active');
+});
 //smooth section highlight in the navbar
 
 //save color theme in localstorage
