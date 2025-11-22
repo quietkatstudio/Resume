@@ -86,9 +86,9 @@ themeToggle.addEventListener("click", () => {
 });
 
 
-
 //back to top button
 const backToTopBtn = document.getElementById('backToTop');
+if (backToTopBtn) {
 window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
         backToTopBtn.style.display = 'block';
@@ -96,6 +96,7 @@ window.addEventListener('scroll', () => {
         backToTopBtn.style.display = 'none';
     }
 });
+}
 
 backToTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth'});
