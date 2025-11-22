@@ -273,7 +273,7 @@ body.dark-mode .logo {
         width: 200px;
         transform: translateY(-20px);
         opacity: 0;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out opacity 0.3s ease-in-out;
         padding: 1rem;
         gap: 1rem;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
