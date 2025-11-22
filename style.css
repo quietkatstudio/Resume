@@ -336,6 +336,7 @@ header#hero {
     position: relative;
     height: 2rem;
     line-height: 2rem;
+    vertical-align: bottom;
     
 }
 
