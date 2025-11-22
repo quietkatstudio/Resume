@@ -226,13 +226,17 @@ body.dark-mode nav {
     border-bottom: 1px solid #ddd;
 } */
 
-.logo {
+.nav-logo {
     font-weight: 700;
     font-size: 1.5rem;
     background: linear-gradient(90deg, #a179f7, #fd7ca4, #5defff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    marin-right: auto;
 }
+
+
 body.dark-mode .logo {
     
     background: linear-gradient(90deg,#a179f7, #fd7ca4, #5defff);
@@ -241,7 +245,49 @@ body.dark-mode .logo {
 }
 
 
-  
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: #4b2c91;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        position: absolute;
+        top: 700px;
+        right: 0;
+        background: linear-gradient(to bottom, #ffffff, #e0d3fc);
+        flex-direction: column;
+        width: 200px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        padding: 1rem;
+        gap: 1rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        border-radius: 0 0 0 8px;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+    
+
 
 nav ul {
     display: flex;
