@@ -330,6 +330,7 @@ header#hero {
     border-right: 2px solid #4b2c91;
     padding-right: 2px;
     animation: blinkCursor 0.7s steps(1) infinite;
+    box-sizing: border-box;
 }
 
 body.dark-mode #typewriter {
