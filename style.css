@@ -334,6 +334,9 @@ header#hero {
     
     min-width: 1ch;
     position: relative;
+    height: 2rem;
+    line-height: 2rem;
+    
 }
 
 #ypewriter::after {
