@@ -88,18 +88,18 @@ themeToggle.addEventListener("click", () => {
 
 
 //back to top button
-const backToTopBtn = document.getElementById('backToTop');
-window.addEventLister('scroll', () => {
-    if (window.scrollY > 200) {
-        backToTopBtn.style.display = 'block';
-    } else {
-        backToTopBtn.style.display = 'none';
-    }
-)};
+//const backToTopBtn = document.getElementById('backToTop');
+//window.addEventLister('scroll', () => {
+//    if (window.scrollY > 200) {
+//        backToTopBtn.style.display = 'block';
+//    } else {
+//        backToTopBtn.style.display = 'none';
+//    }
+//)};
 
-backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth'});
-});
+//backToTopBtn.addEventListener('click', () => {
+//    window.scrollTo({ top: 0, behavior: 'smooth'});
+//});
 
 
 
