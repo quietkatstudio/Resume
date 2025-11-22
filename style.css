@@ -271,7 +271,8 @@ body.dark-mode .logo {
         background: linear-gradient(to bottom, #ffffff, #e0d3fc);
         flex-direction: column;
         width: 200px;
-        transform: translateY(-100%);
+        transform: translateY(-20px);
+        opacity: 0;
         transition: transform 0.3s ease-in-out;
         padding: 1rem;
         gap: 1rem;
@@ -282,6 +283,7 @@ body.dark-mode .logo {
 
     .nav-list.active {
         transform: translateY(0);
+        opacity: 1;
     }
 
     .hamburger {
