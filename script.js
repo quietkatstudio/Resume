@@ -85,6 +85,8 @@ themeToggle.addEventListener("click", () => {
     }
 });
 
+
+//back to top button
 document.addEventListener('DOMContentLoaded', () => {
     const backToTopBtn = document.getElementById('backToTop');
 
@@ -99,7 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-//back to top button
+
+
 //const backToTopBtn = document.getElementById('backToTop');
 //if (backToTopBtn) {
 //window.addEventListener('scroll', () => {
@@ -157,11 +160,18 @@ function createSparkle() {
 setInterval(createSparkle, 200);
 
 //a collapsible mobile menu
+
 const hamburger = document.getElementById('hamburger');
 const navList = document.getElementById('nav-list');
 
 hamburger.addEventListener('click',() => {
     navList.classList.toggle('active');
+});
+
+document.querySelectorAll('#nav-list a').forEach(link => {
+    link.addEventListener('click', () => {
+        navList.classList.remove('active');
+    });
 });
 //smooth section highlight in the navbar
 
