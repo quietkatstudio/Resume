@@ -7,11 +7,16 @@
 .nav-list {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    /*gap: 1.5rem;*/
     align-items: center;
     padding: 1rem 2rem;
     background-color: #ffffff;
     margin: 0;
+
+    
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1rem;
 }
 
 body.dark-mode .nav-list {
