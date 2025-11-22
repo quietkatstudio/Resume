@@ -288,6 +288,7 @@ body.dark-mode .logo {
 
     .hamburger {
         display: flex;
+        z-index: 1100;
     }
 }
     
