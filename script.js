@@ -165,6 +165,7 @@ const hamburger = document.getElementById('hamburger');
 const navList = document.getElementById('nav-list');
 
 hamburger.addEventListener('click',() => {
+    e.stopPropagation();
     navList.classList.toggle('active');
 });
 
@@ -173,6 +174,17 @@ document.querySelectorAll('#nav-list a').forEach(link => {
         navList.classList.remove('active');
     });
 });
+
+document.addEventListenr('click', (e) => {
+    const clickedInsidMenu = navList.contains(e.target);
+    const clickedHamburger = hamburger.contains(e.target);
+
+    if(!clickedInsideMenu && !clickedHamburger) {
+        navList.classList.remove('active');
+    }
+});
+
+
 //smooth section highlight in the navbar
 
 //save color theme in localstorage
