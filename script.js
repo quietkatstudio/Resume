@@ -164,7 +164,7 @@ setInterval(createSparkle, 200);
 const hamburger = document.getElementById('hamburger');
 const navList = document.getElementById('nav-list');
 
-hamburger.addEventListener('click',() => {
+hamburger.addEventListener('click',(e) => {
     e.stopPropagation();
     navList.classList.toggle('active');
 });
@@ -175,8 +175,8 @@ document.querySelectorAll('#nav-list a').forEach(link => {
     });
 });
 
-document.addEventListenr('click', (e) => {
-    const clickedInsidMenu = navList.contains(e.target);
+document.addEventListener('click', (e) => {
+    const clickedInsideMenu = navList.contains(e.target);
     const clickedHamburger = hamburger.contains(e.target);
 
     if(!clickedInsideMenu && !clickedHamburger) {
