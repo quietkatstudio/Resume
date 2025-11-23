@@ -161,8 +161,8 @@ setInterval(createSparkle, 200);
 
 //a collapsible mobile menu
 
-const hamburger = document.getElementById('hamburger');
-const navList = document.getElementById('nav-list');
+const hamburger = document.querySelector('.hamburger');
+const navList = document.querySelector('.nav-list');
 
 hamburger.addEventListener('click',(e) => {
     e.stopPropagation();
